@@ -18,4 +18,10 @@
         <constructor-arg ref="myFortuneService"/>
     </bean>
 
+    <bean id="myTennisCoach"
+          class="com.miraenoh.springdemo.TennisCoach">
+        <!-- set up setter injection -->
+        <property name="fortuneService" ref="myFortuneService" />
+    </bean>
+
 </beans>
