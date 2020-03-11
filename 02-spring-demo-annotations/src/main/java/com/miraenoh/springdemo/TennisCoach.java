@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component()
 public class TennisCoach implements Coach {
+    @Autowired
     private FortuneService fortuneService;
 
     public TennisCoach() {
@@ -12,11 +13,11 @@ public class TennisCoach implements Coach {
     }
 
     // DI by Autowired random method
-    @Autowired
+/*    @Autowired
     public void doSomeCrazyStuff(FortuneService theFortuneService) {
         System.out.println(">> TennisCoach: inside doSomeCrazyStuff() method");
         fortuneService = theFortuneService;
-    }
+    }*/
 
     // DI by Autowired setter method
 /*    @Autowired
