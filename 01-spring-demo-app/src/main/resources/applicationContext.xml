@@ -12,7 +12,7 @@
 
     <!-- Define your beans here -->
     <bean id="myFortuneService"
-          class="com.miraenoh.springdemo.services.HappyFortuneService">
+          class="com.miraenoh.springdemo.services.RandomFortuneService">
     </bean>
 
     <bean id="myCoach"
