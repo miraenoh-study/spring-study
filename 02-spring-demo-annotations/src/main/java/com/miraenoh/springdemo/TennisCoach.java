@@ -11,12 +11,19 @@ public class TennisCoach implements Coach {
         System.out.println(">> inside default constructor");
     }
 
-    // DI by setter method
+    // DI by Autowired random method
     @Autowired
+    public void doSomeCrazyStuff(FortuneService theFortuneService) {
+        System.out.println(">> TennisCoach: inside doSomeCrazyStuff() method");
+        fortuneService = theFortuneService;
+    }
+
+    // DI by Autowired setter method
+/*    @Autowired
     public void setFortuneService(FortuneService fortuneService) {
         System.out.println(">> TennisCoach: inside setFortuneService() method");
         this.fortuneService = fortuneService;
-    }
+    }*/
 
     // DI by Autowired constructor annotation
 /*    @Autowired
