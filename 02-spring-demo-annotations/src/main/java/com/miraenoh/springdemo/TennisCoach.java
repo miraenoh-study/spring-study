@@ -31,7 +31,7 @@ public class TennisCoach implements Coach {
 
     // DI by Autowired constructor annotation
     @Autowired
-    public TennisCoach(@Qualifier("randomFortuneService") FortuneService fortuneService) {
+    public TennisCoach(@Qualifier("fileFortuneService") FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
