@@ -1,5 +1,7 @@
 package com.miraenoh.springdemo;
 
+import com.miraenoh.springdemo.coach.Coach;
+import com.miraenoh.springdemo.config.ScanSportConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class JavaConfigDemoApp {

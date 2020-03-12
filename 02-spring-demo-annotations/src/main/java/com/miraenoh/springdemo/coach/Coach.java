@@ -1,4 +1,4 @@
-package com.miraenoh.springdemo;
+package com.miraenoh.springdemo.coach;
 
 public interface Coach {
     String getDailyWorkout();

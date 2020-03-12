@@ -1,5 +1,6 @@
-package com.miraenoh.springdemo;
+package com.miraenoh.springdemo.service.impl;
 
+import com.miraenoh.springdemo.service.FortuneService;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;

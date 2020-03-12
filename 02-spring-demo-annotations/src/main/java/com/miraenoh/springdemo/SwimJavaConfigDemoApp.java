@@ -1,5 +1,7 @@
 package com.miraenoh.springdemo;
 
+import com.miraenoh.springdemo.coach.SwimCoach;
+import com.miraenoh.springdemo.config.SportConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class SwimJavaConfigDemoApp {

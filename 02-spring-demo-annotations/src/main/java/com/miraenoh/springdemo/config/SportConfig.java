@@ -1,5 +1,9 @@
-package com.miraenoh.springdemo;
+package com.miraenoh.springdemo.config;
 
+import com.miraenoh.springdemo.coach.Coach;
+import com.miraenoh.springdemo.coach.SwimCoach;
+import com.miraenoh.springdemo.service.FortuneService;
+import com.miraenoh.springdemo.service.impl.SadFortuneService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

@@ -1,4 +1,6 @@
-package com.miraenoh.springdemo;
+package com.miraenoh.springdemo.service.impl;
+
+import com.miraenoh.springdemo.service.FortuneService;
 
 public class SadFortuneService implements FortuneService {
     @Override

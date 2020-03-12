@@ -1,4 +1,4 @@
-package com.miraenoh.springdemo;
+package com.miraenoh.springdemo.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

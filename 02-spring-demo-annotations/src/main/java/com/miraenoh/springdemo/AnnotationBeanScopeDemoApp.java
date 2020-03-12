@@ -1,5 +1,6 @@
 package com.miraenoh.springdemo;
 
+import com.miraenoh.springdemo.coach.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationBeanScopeDemoApp {
