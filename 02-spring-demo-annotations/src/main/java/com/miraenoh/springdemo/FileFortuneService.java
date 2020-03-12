@@ -2,6 +2,7 @@ package com.miraenoh.springdemo;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.File;
 import java.util.*;
 
@@ -11,6 +12,18 @@ public class FileFortuneService implements FortuneService {
 
     @Override
     public String getFortune() {
+        if (data.size() > 0) {
+            // Pick the random fortune and return it
+            Random random = new Random();
+            return data.get(random.nextInt(data.size()));
+        } else {
+            return null;
+        }
+    }
+
+    @PostConstruct
+    private void readFortunesFile() {
+        System.out.println(">> FileFortuneService: inside of readFortunesFile()");
         // Read the file
         try {
             ClassLoader classLoader = FileFortuneService.class.getClassLoader();
@@ -23,11 +36,6 @@ public class FileFortuneService implements FortuneService {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return null;
         }
-
-        // Pick the random fortune and return it
-        Random random = new Random();
-        return data.get(random.nextInt(data.size()));
     }
 }

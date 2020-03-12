@@ -18,5 +18,8 @@ public class AnnotationBeanScopeDemoApp {
         System.out.println("\nPointing to the same object: " + result);
         System.out.println("\nMemory location for theCoach: " + theCoach);
         System.out.println("\nMemory location for alphaCoach: " + alphaCoach);
+
+        //  Close the context
+        context.close();
     }
 }
